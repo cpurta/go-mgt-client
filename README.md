@@ -11,7 +11,7 @@ package main
 
 import (
     "fmt"
-    mgt "github.com/Joingo/go-mgt-client"
+    mgt "github.com/cpurta/go-mgt-client"
 )
 
 func main() {
