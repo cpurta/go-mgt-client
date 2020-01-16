@@ -1,4 +1,4 @@
-module github.com/Joingo/go-mgt-client
+module github.com/cpurta/go-mgt-client
 
 go 1.13
 
