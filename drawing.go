@@ -6,18 +6,18 @@ type PlayerDrawingResponse struct {
 }
 
 type PlayerDrawing struct {
-	CheckInAvailable bool   `json:"checkInAvailable"`
-	CheckInStartTime string `json:"checkInStartTime"`
-	Name             string `json:"name"`
-	CheckedIn        bool   `json:"checkedIn"`
-	DWID             int    `json:"DWID"`
-	CheckInEndTime   string `json:"checkInEndTime"`
-	NumberOfEntries  int    `json:"numberOfEntries"`
-	DrawingState     int    `json:"drawingState"`
-	IconURL          string `json:"IconURL"`
-	CheckInDev       string `json:"checkInDev"`
-	CheckInTime      string `json:"checkInTime"`
-	Description      string `json:"description"`
+	CheckInAvailable bool    `json:"checkInAvailable"`
+	CheckInStartTime string  `json:"checkInStartTime"`
+	Name             string  `json:"name"`
+	CheckedIn        bool    `json:"checkedIn"`
+	DWID             float64 `json:"DWID"`
+	CheckInEndTime   string  `json:"checkInEndTime"`
+	NumberOfEntries  int     `json:"numberOfEntries"`
+	DrawingState     int     `json:"drawingState"`
+	IconURL          string  `json:"IconURL"`
+	CheckInDev       string  `json:"checkInDev"`
+	CheckInTime      string  `json:"checkInTime"`
+	Description      string  `json:"description"`
 }
 
 type DrawingResponse struct {
