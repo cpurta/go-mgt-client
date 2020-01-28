@@ -40,12 +40,8 @@ type Promotion struct {
 }
 
 type PlayerPromotionResponse struct {
-	PlayerID         string            `json:"playerId"`
-	PlayerPromotions *PlayerPromotions `json:"playerPromotions"`
-}
-
-type PlayerPromotions struct {
-	PlayerPromotion []*PlayerPromotion `json:"playerPromotion"`
+	PlayerID         string             `json:"playerId"`
+	PlayerPromotions []*PlayerPromotion `json:"playerPromotions"`
 }
 
 type PlayerPromotion struct {

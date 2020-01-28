@@ -182,7 +182,7 @@ func (client *mgtClient) GetPlayerPromotions(playerID, uuid string) ([]*PlayerPr
 		return nil, err
 	}
 
-	return promoResponse.PlayerPromotions.PlayerPromotion, nil
+	return promoResponse.PlayerPromotions, nil
 }
 
 func (client *mgtClient) GetDrawings(uuid string) (*AvailableDrawings, error) {
