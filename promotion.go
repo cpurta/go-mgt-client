@@ -9,9 +9,9 @@ type AvailablePromotions struct {
 }
 
 type Promotion struct {
-	MtgID                        int         `json:"mtgId"`
-	TgID                         int         `json:"tgId"`
-	SiteID                       int         `json:"siteId"`
+	MtgID                        float64     `json:"mtgId"`
+	TgID                         float64     `json:"tgId"`
+	SiteID                       float64     `json:"siteId"`
 	MPromoDescription            string      `json:"mPromoDescription"`
 	MPromoButtonDescription      string      `json:"mPromoButtonDescription"`
 	MPromoMediaURL               string      `json:"mPromoMediaURL"`
@@ -45,9 +45,9 @@ type PlayerPromotionResponse struct {
 }
 
 type PlayerPromotion struct {
-	MTGID             int    `json:"mtgId"`
-	TGID              int    `json:"tgId"`
-	Description       string `json:"promoDescription"`
-	ButtonDescription string `json:"buttonDescription"`
-	IconURL           string `json:"IconURL"`
+	MTGID             float64 `json:"mtgId"`
+	TGID              float64 `json:"tgId"`
+	Description       string  `json:"promoDescription"`
+	ButtonDescription string  `json:"buttonDescription"`
+	IconURL           string  `json:"IconURL"`
 }
