@@ -9,6 +9,7 @@ type AvailablePromotions struct {
 }
 
 type Promotion struct {
+	ID                           float64     `json:"id,omitempty"`
 	MtgID                        float64     `json:"mtgId"`
 	TgID                         float64     `json:"tgId"`
 	SiteID                       float64     `json:"siteId"`

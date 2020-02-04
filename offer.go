@@ -6,6 +6,7 @@ type Offer struct {
 }
 
 type PlayerOffer struct {
+	ID                     int    `json:"id,omitempty"`
 	OfferID                int    `json:"offerId"`
 	OfferStartDate         string `json:"offerStartDate"`
 	OfferEndDate           string `json:"offerEndDate"`

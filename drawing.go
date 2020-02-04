@@ -29,6 +29,7 @@ type AvailableDrawings struct {
 }
 
 type Drawing struct {
+	ID                    int                    `json:"id,omitempty"`
 	DWID                  int                    `json:"DWID"`
 	Name                  string                 `json:"name"`
 	SiteID                int                    `json:"siteId"`
