@@ -1,7 +1,7 @@
 package gomgtclient
 
 type Offer struct {
-	PlayerID     string         `json:"playerId"`
+	PlayerID     int64          `json:"playerId"`
 	PlayerOffers []*PlayerOffer `json:"playerOffers"`
 }
 

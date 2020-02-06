@@ -426,7 +426,7 @@ func TestGetDrawings(t *testing.T) {
 func TestGetPlayerDrawings(t *testing.T) {
 	var (
 		client           = NewClient(http.DefaultClient, "http://localhost", "fakelicense")
-		drawingsResponse = `{"playerId":"108427","playerDrawings":[{"checkInAvailable":false,"checkInStartTime":"1900-01-01T00:00:00","name":"Six Figure Snowflakes","checkedIn":false,"DWID":111,"checkInEndTime":"1900-01-01T00:00:00","numberOfEntries":0,"drawingState":0,"IconURL":"","checkInDev":"","checkInTime":"0001-01-01T00:00:00","description":"Six Figure Snowflakes"},{"checkInAvailable":true,"checkInStartTime":"2020-01-09T19:27:41","name":"$47K Hot Seats & Slot Tourney","checkedIn":false,"DWID":115,"checkInEndTime":"2020-01-09T19:09:00.187","numberOfEntries":0,"drawingState":1,"IconURL":"","checkInDev":"","checkInTime":"0001-01-01T00:00:00","description":"$47K Hot Seats & Slot Tourney"}]}`
+		drawingsResponse = `{"playerId":108427,"playerDrawings":[{"checkInAvailable":false,"checkInStartTime":"1900-01-01T00:00:00","name":"Six Figure Snowflakes","checkedIn":false,"DWID":111,"checkInEndTime":"1900-01-01T00:00:00","numberOfEntries":0,"drawingState":0,"IconURL":"","checkInDev":"","checkInTime":"0001-01-01T00:00:00","description":"Six Figure Snowflakes"},{"checkInAvailable":true,"checkInStartTime":"2020-01-09T19:27:41","name":"$47K Hot Seats & Slot Tourney","checkedIn":false,"DWID":115,"checkInEndTime":"2020-01-09T19:09:00.187","numberOfEntries":0,"drawingState":1,"IconURL":"","checkInDev":"","checkInTime":"0001-01-01T00:00:00","description":"$47K Hot Seats & Slot Tourney"}]}`
 		playerID         = "6"
 		drawings         []*PlayerDrawing
 		expectedDrawings = []*PlayerDrawing{

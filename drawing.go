@@ -1,7 +1,7 @@
 package gomgtclient
 
 type PlayerDrawingResponse struct {
-	PlayerID       string           `json:"playerId"`
+	PlayerID       int64            `json:"playerId"`
 	PlayerDrawings []*PlayerDrawing `json:"playerDrawings"`
 }
 
