@@ -249,7 +249,7 @@ func TestGetPromotions(t *testing.T) {
 func TestGetPlayerPromotions(t *testing.T) {
 	var (
 		client             = NewClient(http.DefaultClient, "http://localhost", "fakelicense")
-		promotionsResponse = `{"playerId":"6","playerPromotions":[{"mtgId":10,"tgId":49,"promoDescription":"WeekDay Bonus Free Play","buttonDescription":"WeekDay Bonus Free Play","IconURL":"http://server:8087/images/promoimage.jpg"},{"mtgId":9,"tgId":48,"promoDescription":"Press 2 Win","buttonDescription":"Press 2 Win","IconURL":"http://server:8087/images/promoimage.jpg"}]}`
+		promotionsResponse = `{"playerId":6,"playerPromotions":[{"mtgId":10,"tgId":49,"promoDescription":"WeekDay Bonus Free Play","buttonDescription":"WeekDay Bonus Free Play","IconURL":"http://server:8087/images/promoimage.jpg"},{"mtgId":9,"tgId":48,"promoDescription":"Press 2 Win","buttonDescription":"Press 2 Win","IconURL":"http://server:8087/images/promoimage.jpg"}]}`
 		playerID           = "6"
 		promotions         []*PlayerPromotion
 		expectedPromotions = []*PlayerPromotion{

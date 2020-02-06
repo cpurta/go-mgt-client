@@ -41,7 +41,7 @@ type Promotion struct {
 }
 
 type PlayerPromotionResponse struct {
-	PlayerID         string             `json:"playerId"`
+	PlayerID         int64              `json:"playerId"`
 	PlayerPromotions []*PlayerPromotion `json:"playerPromotions"`
 }
 
